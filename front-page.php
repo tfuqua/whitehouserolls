@@ -12,9 +12,8 @@ get_header(); ?>
 
     <!-- Hero Image -->
     <?php if(get_field('hero_image')) { ?>
-    	<div class="hero">
-        <?php echo wp_get_attachment_image(get_field('hero_image'), 'full', false, array( 'class' => '') ); ?>
-
+      <?php $background = wp_get_attachment_image_src(get_field('hero_image'), 'full', false); ?>
+	     <div class="hero hero-1" style="background-image: url('<?php echo $background[0] ?>');">
         <div class="hero-text">
           <?php echo get_field('hero_text')?>
           <?php if(get_field('button_text')) { ?>
@@ -29,14 +28,16 @@ get_header(); ?>
     <!-- Call To Action -->
     <?php if(get_field('call_to_action_image')) { ?>
       <div class="call-to-action">
-        <div class="call-to-action-img animate">
-          <?php echo wp_get_attachment_image(get_field('call_to_action_image'), 'full', false, array( 'class' => '') ); ?>
-        </div>
-        <div class="call-to-action-content">
-            <h3><?php echo get_field('call_to_action_heading')?></h3>
-            <div>
-              <?php echo get_field('call_to_action_body')?>
-            </div>
+        <div class="container-fluid">
+          <div class="call-to-action-img animate">
+            <?php echo wp_get_attachment_image(get_field('call_to_action_image'), 'full', false, array( 'class' => '') ); ?>
+          </div>
+          <div class="call-to-action-content">
+              <h3><?php echo get_field('call_to_action_heading')?></h3>
+              <div>
+                <?php echo get_field('call_to_action_body')?>
+              </div>
+          </div>
         </div>
       </div>
     <?php } ?>
@@ -45,7 +46,8 @@ get_header(); ?>
     <!-- Featured Content -->
     <?php
       if( have_rows('featured_content') ) { ?>
-        <div class="featured-content">
+        <div class="featured-content-wrapper">
+          <div class="container-fluid">
             <?php while ( have_rows('featured_content') ) : the_row(); ?>
                 <div class="featured-item">
                   <div class="featured-section">
@@ -62,6 +64,7 @@ get_header(); ?>
 
                 </div>
             <?php endwhile; ?>
+          </div>
         </div>
       <?php } ?>
 
@@ -69,18 +72,21 @@ get_header(); ?>
       <!-- Hero Image -->
       <?php if(get_field('hero_2_image')) { ?>
       	<div class="hero hero-2">
-          <?php echo wp_get_attachment_image(get_field('hero_2_image'), 'full', false, array( 'class' => '') ); ?>
+          <div class="container-fluid">
+            <?php echo wp_get_attachment_image(get_field('hero_2_image'), 'full', false, array( 'class' => '') ); ?>
 
-          <div class="hero-text">
-            <?php echo get_field('hero_2_text')?>
-            <?php if(get_field('button_text')) { ?>
-            <div class="hero-button">
-              <a href="#"><?php echo get_field('button_2_text')?></a>
-            </div>
-            <?php } ?>
+            <div class="hero-text">
+              <?php echo get_field('hero_2_text')?>
+              <?php if(get_field('button_text')) { ?>
+              <div class="hero-button">
+                <a href="#"><?php echo get_field('button_2_text')?></a>
+              </div>
+              <?php } ?>
+            </div>            
           </div>
         </div>
       <?php } ?>
+
 
     <!-- Featured Posts -->
     <?php

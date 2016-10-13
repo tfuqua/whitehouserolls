@@ -4,12 +4,25 @@ header{
   position: relative;
   border-top:none;
   margin-bottom:15px;
-  
-  img{
-    height:130px;
-    position: absolute;
-    left:15px;
-    top: 50%;
-    margin-top:-65px;
+
+  .brand {
+    width:100%;
+
+    img{
+      position: absolute;
+      height:80px;
+      top:0;
+      margin:0;
+      margin-left: -40px;
+      left:50%;
+      z-index: 600;
+
+      @media (min-width: $screen-md-min) {
+        top: -25px;
+        margin:0;
+        height: 110px;
+        left:15px;
+      }
+    }
   }
 }
