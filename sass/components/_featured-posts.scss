@@ -1,7 +1,18 @@
 .featured-posts .featured-post {
 
+  .featured-title {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    color: #794400;
+  }
+  
   .featured-button a {
-    background-color:#e24018;
-    color: #fff;
+    color:#fff;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #ff7717, #ec5d15);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   }
 }
