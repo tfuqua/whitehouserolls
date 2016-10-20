@@ -9,11 +9,4 @@ function whitehouserolls_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'whitehouserolls_enqueue_styles' );
 
-//This method helps keep get_excerpt() to 5 lines
-function custom_excerpt_length( $length ) {
-	return 22;
-}
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-
-
 ?>
