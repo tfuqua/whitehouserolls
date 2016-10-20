@@ -1,6 +1,7 @@
 .featured-posts .featured-post {
 
   .featured-title {
+    font-family: AmericanTypewriter;
     font-size: 30px;
     font-weight: bold;
     font-style: normal;
@@ -8,7 +9,12 @@
     line-height: 1;
     color: #794400;
   }
-  
+
+  .featured-description{
+    color: #b06010;
+    font-weight: 400;
+  }
+
   .featured-button a {
     color:#fff;
     border-radius: 5px;

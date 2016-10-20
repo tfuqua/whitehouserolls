@@ -81,6 +81,15 @@ header {
   html.show-menu .nav-wrapper {
     padding-top: 40px; } }
 
+footer {
+  background: url("images/brown.png") repeat;
+  padding: 0; }
+  footer .footer-wrapper {
+    background: url("images/illustration-01.png") no-repeat;
+    background-position: center bottom 25px;
+    background-size: contain;
+    padding: 20px 15px 10px; }
+
 .hero.hero-2 {
   min-height: 0px;
   padding-top: 40px;
@@ -88,6 +97,9 @@ header {
   background-color: #8b572a;
   overflow: hidden;
   display: block; }
+  @media (min-width: 900px) {
+    .hero.hero-2 {
+      min-height: 450px; } }
   .hero.hero-2 .hero-img-wrapper {
     text-align: center;
     width: 100%;
@@ -108,10 +120,10 @@ header {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.59;
-    color: #ffffff;
-    text-align: center; }
+    color: #ffffff; }
     .hero.hero-2 .hero-text h3 {
-      font-size: 34px;
+      font-family: AmericanTypewriter;
+      font-size: 38px;
       margin: 5px 0 25px;
       font-weight: bold;
       font-style: normal;
@@ -120,22 +132,20 @@ header {
       color: #ffffff; }
     @media (min-width: 900px) {
       .hero.hero-2 .hero-text {
-        width: 40%;
+        width: 50%;
         left: 0;
         top: 0px;
         position: absolute; } }
-    .hero.hero-2 .hero-text .hero-button {
-      text-align: center; }
-      .hero.hero-2 .hero-text .hero-button a {
-        border-radius: 5px;
-        text-align: center;
-        background: linear-gradient(to bottom, #ff7717, #ec5d15);
-        background: linear-gradient(to bottom, #ff7717, #ec5d15);
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1); }
-        @media (max-width: 899px) {
-          .hero.hero-2 .hero-text .hero-button a {
-            width: 320px;
-            max-width: 100%; } }
+    .hero.hero-2 .hero-text .hero-button a {
+      border-radius: 5px;
+      text-align: center;
+      background: linear-gradient(to bottom, #ff7717, #ec5d15);
+      background: linear-gradient(to bottom, #ff7717, #ec5d15);
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1); }
+      @media (max-width: 899px) {
+        .hero.hero-2 .hero-text .hero-button a {
+          padding-left: 45px;
+          padding-right: 45px; } }
 
 .hero.hero-1 {
   margin-top: -15px;
@@ -146,15 +156,24 @@ header {
   background-size: contain;
   background-position: right top 30px;
   background-repeat: no-repeat; }
+  @media (min-width: 900px) {
+    .hero.hero-1 {
+      min-height: 465px;
+      background-size: auto 90%; } }
+  @media (min-width: 1080px) {
+    .hero.hero-1 {
+      background-position: center top 20px; } }
   @media (max-width: 899px) {
     .hero.hero-1 {
-      background-position: right top 150px;
-      padding-bottom: 15px;
+      background-position: center top 120px;
+      min-height: 500px;
+      padding-bottom: 75px;
       padding-top: 10px; }
       .hero.hero-1 .hero-text-wrapper {
         padding-top: 0; } }
   .hero.hero-1 .hero-text {
-    font-size: 30px;
+    font-family: AmericanTypewriter;
+    font-size: 45px;
     color: #794400;
     font-weight: bold;
     font-size: 40px;
@@ -194,12 +213,13 @@ header {
     @media (max-width: 899px) {
       .hero.hero-1 .hero-text .hero-button {
         position: absolute;
-        bottom: 15px;
+        bottom: 50px;
         margin: 0 auto;
         width: 100%;
         left: 0;
         text-align: center; } }
     .hero.hero-1 .hero-text .hero-button a {
+      font-family: "Gotham SSm A", "Gotham SSm B";
       border-radius: 5px;
       text-align: center;
       background: linear-gradient(to bottom, #ff7717, #ec5d15);
@@ -231,7 +251,8 @@ header {
     line-height: 1.52;
     color: #794400; }
     .call-to-action .call-to-action-content h3 {
-      font-size: 39px;
+      font-family: AmericanTypewriter;
+      font-size: 38px;
       font-weight: bold;
       font-style: normal;
       font-stretch: normal;
@@ -245,6 +266,7 @@ header {
     margin: 0 auto;
     z-index: 2; }
     .featured-content-wrapper .container-fluid .featured-item {
+      border-radius: 0px;
       background: #fff;
       border: 15px solid #eaba40;
       background-image: none;
@@ -301,7 +323,7 @@ header {
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
-      line-height: 1.44;
+      line-height: 1.5;
       color: #b06010; }
     .featured-content-wrapper .container-fluid h3 {
       font-size: 33px;
@@ -312,12 +334,17 @@ header {
       text-shadow: none; }
 
 .featured-posts .featured-post .featured-title {
+  font-family: AmericanTypewriter;
   font-size: 30px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
   color: #794400; }
+
+.featured-posts .featured-post .featured-description {
+  color: #b06010;
+  font-weight: 400; }
 
 .featured-posts .featured-post .featured-button a {
   color: #fff;
