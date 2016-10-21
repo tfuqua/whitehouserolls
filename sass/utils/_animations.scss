@@ -18,5 +18,25 @@
 .animated {
   @include animation('fadeRight');
   @include animationDuration(.5s);
-  @include transition-timing-function('ease-in')
+  @include transition-timing-function(ease-in)
+}
+
+
+@include keyframes(rocker) {
+  0%   {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+.rocker{
+  @include animation('rocker');
+  @include animationCount(infinite);
+  @include animationDuration(1s);
+  @include transition-timing-function(ease-in-out)
 }

@@ -28,8 +28,13 @@
     animation-duration: $duration;
 }
 
+@mixin animationCount($count) {
+  -webkit-animation-iteration-count: $count; /* Safari 4.0 - 8.0 */
+  animation-iteration-count: $count
+}
+
 @mixin transition-timing-function($timing...) {
-    -moz-transition-timing-function:    $timing;
-    -webkit-transition-timing-function: $timing;
-    transition-timing-function:         $timing;
+    -moz-animation-timing-function:    $timing;
+    -webkit-animation-timing-function: $timing;
+    animation-timing-function:         $timing;
 }

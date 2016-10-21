@@ -1,5 +1,11 @@
 .featured-posts .featured-post {
 
+  margin:0px auto 80px;
+
+  @media (min-width: $screen-md-min) {
+     margin:40px 40px 40px 0;
+   }
+
   .featured-title {
     font-family: AmericanTypewriter;
     font-size: 30px;

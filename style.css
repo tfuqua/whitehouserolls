@@ -52,9 +52,59 @@
   -webkit-animation-duration: 0.5s;
   -moz-animation-duration: 0.5s;
   animation-duration: 0.5s;
-  -moz-transition-timing-function: "ease-in";
-  -webkit-transition-timing-function: "ease-in";
-  transition-timing-function: "ease-in"; }
+  -moz-animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in; }
+
+@-webkit-keyframes rocker {
+  0% {
+    transform: rotate(-15deg); }
+  50% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-15deg); } }
+
+@-moz-keyframes rocker {
+  0% {
+    transform: rotate(-15deg); }
+  50% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-15deg); } }
+
+@-o-keyframes rocker {
+  0% {
+    transform: rotate(-15deg); }
+  50% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-15deg); } }
+
+@keyframes rocker {
+  0% {
+    transform: rotate(-15deg); }
+  50% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-15deg); } }
+
+.rocker {
+  -webkit-animation-name: "rocker";
+  -moz-animation-name: "rocker";
+  animation-name: "rocker";
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out; }
 
 header {
   position: relative;
@@ -81,15 +131,6 @@ header {
   html.show-menu .nav-wrapper {
     padding-top: 40px; } }
 
-footer {
-  background: url("images/brown.png") repeat;
-  padding: 0; }
-  footer .footer-wrapper {
-    background: url("images/illustration-01.png") no-repeat;
-    background-position: center bottom 25px;
-    background-size: contain;
-    padding: 20px 15px 10px; }
-
 .hero.hero-2 {
   min-height: 0px;
   padding-top: 40px;
@@ -101,18 +142,15 @@ footer {
     .hero.hero-2 {
       min-height: 450px; } }
   .hero.hero-2 .hero-img-wrapper {
+    width: 50%;
+    margin-top: 30px;
     text-align: center;
-    width: 100%;
-    overflow: hidden; }
+    float: right;
+    background: url("images/crowd.png") top right no-repeat;
+    background-size: contain; }
     .hero.hero-2 .hero-img-wrapper img {
-      height: 200px;
-      width: auto;
-      float: right; }
-      @media (min-width: 900px) {
-        .hero.hero-2 .hero-img-wrapper img {
-          width: 80%;
-          height: auto;
-          margin-top: 50px; } }
+      max-height: 200px;
+      width: auto; }
   .hero.hero-2 .hero-text {
     background: transparent;
     margin: 15px 15px;
@@ -337,7 +375,7 @@ footer {
   margin: 0px auto 80px; }
   @media (min-width: 900px) {
     .featured-posts .featured-post {
-      margin: 40px auto; } }
+      margin: 40px 40px 40px 0; } }
   .featured-posts .featured-post .featured-title {
     font-family: AmericanTypewriter;
     font-size: 30px;

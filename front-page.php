@@ -87,7 +87,7 @@ get_header(); ?>
       	<div class="hero hero-2">
           <div class="container-fluid">
             <div class="hero-img-wrapper">
-              <?php echo wp_get_attachment_image(get_field('hero_2_image'), 'full', false, array( 'class' => '') ); ?>
+              <?php echo wp_get_attachment_image(get_field('hero_2_image'), 'full', false, array( 'class' => 'rocker') ); ?>
             </div>
             <div class="hero-text">
               <h3>

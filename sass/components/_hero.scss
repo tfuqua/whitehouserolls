@@ -11,21 +11,20 @@
   }
 
   .hero-img-wrapper {
-
+    width:50%;
+    margin-top:30px;
     text-align: center;
-    width:100%;
-    overflow: hidden;
+    float:right;
+    background: url('images/crowd.png') top right no-repeat;
+    background-size: contain;
 
     img {
 
-      height:200px;
-      width: auto;
-      float:right;
+      max-height: 200px;
+      width:auto;
 
       @media (min-width: $screen-md-min) {
-        width:80%;
-        height: auto;
-        margin-top:50px;
+
       }
     }
   }
