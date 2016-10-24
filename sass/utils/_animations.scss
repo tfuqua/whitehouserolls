@@ -1,6 +1,6 @@
 @include keyframes(fadeRight) {
   0%   {
-    transform: translateX(-1000px);
+    transform: translateX(-100%);
     opacity: 0;
   }
   100% {
@@ -12,12 +12,12 @@
 
 .animate {
   opacity: 0;
-  transform: translate(-1000px);
+  transform: translate(-100%);
 }
 
 .animated {
   @include animation('fadeRight');
-  @include animationDuration(.5s);
+  @include animationDuration(1s);
   @include transition-timing-function(ease-in)
 }
 
