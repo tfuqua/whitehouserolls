@@ -8,20 +8,6 @@
   padding-bottom: 50px;
 }
 
-.full-width-content{
-  font-size: 18px;
-  overflow: hidden;
-
-  img {
-
-    height: auto;
-
-    @media (min-width: $screen-md-min) {
-      width: 100%;
-    }
-  }
-}
-
 .page-hero{
   margin-top:-15px;
   margin-bottom: 50px;
