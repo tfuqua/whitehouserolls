@@ -11,13 +11,5 @@ add_action( 'wp_enqueue_scripts', 'whitehouserolls_enqueue_styles' );
 
 
 add_filter( 'theme_page_templates', 'my_remove_page_template' );
-function my_remove_page_template( $pages_templates ) {
-
-    unset( $pages_templates['templates/page-products.php'] );
-    unset( $pages_templates['templates/page-product.php'] );
-
-    return $pages_templates;
-}
-
 
 ?>

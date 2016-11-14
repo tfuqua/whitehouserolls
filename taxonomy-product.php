@@ -21,20 +21,48 @@ get_header(); ?>
 		$heading = get_field('hero_heading', $taxonomy . '_' . $term_id);
 		?>
 
-    <!-- Hero Image -->
-    <?php if($image){ ?>
-    <div class="whr-products-hero">
-      <div class="container-fluid">
-        <div class="hero-text">
-          <h2><?php echo $heading ?></h2>
-          <h3><?php echo $body; ?></h3>
-        </div>
-        <div class="hero-img">
-          <?php echo wp_get_attachment_image($image, 'full', false, array( 'class' => '') ); ?>
-        </div>
-      </div>
-    </div>
-    <?php }?>
+		<!-- Hero Image -->
+		<?php if($image) { ?>
+			<?php $background = wp_get_attachment_image_src($image), 'full', false); ?>
+			 <div class="hero product-hero" style="background-image: url('<?php echo $background[0] ?>');">
+				<div class="hero-text-wrapper">
+					<div>
+						<div class="hero-text">
+							<div class="hero-header">
+								<?php echo $heading; ?>
+							</div>
+							<div class="hero-body">
+								<?php echo $body;?>
+							</div>
+							<?php if(get_field('button_text')){ ?>
+								<div class="hero-buttons">
+									<a class="button" href="<?php echo get_field('button_link')?>"><?php echo get_field('button_text'); ?></a>
+								</div>
+							<?php
+							}?>
+						</div>
+					</div>
+				</div>
+			</div>
+		<?php
+			} else {
+				$background =  get_template_directory_uri() . '/images/hero.png';
+				?>
+				 <div class="hero mini-hero" style="background-image: url('<?php echo $background ?>');">
+					<div class="hero-text-wrapper">
+						<div>
+							<div class="hero-text">
+								<?php
+								while ( have_posts() ) : the_post();
+									the_title();
+								endwhile;
+								?>
+							</div>
+						</div>
+					</div>
+				</div>
+		<?php
+		 }?>
 
 		<div class="container-fluid">
 			<div class="product-list">
