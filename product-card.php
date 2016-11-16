@@ -12,7 +12,7 @@
 		</div>
 		<?php if(get_field('buy_link')){ ?>
 			<div class="product-buttons">
-				<a href="<?php echo get_field('buy_link');?>">Order Online</a>
+				<a class="button" href="<?php echo get_field('buy_link');?>">Order Online</a>
 			</div>
 		<?php } ?>
 	</div>
