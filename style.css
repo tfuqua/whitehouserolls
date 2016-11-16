@@ -121,22 +121,20 @@ header {
   position: relative;
   border-top: none;
   margin-bottom: 15px; }
-  header .brand {
-    width: 100%; }
-    header .brand img {
-      position: absolute;
-      height: 80px;
-      top: 0;
-      margin: 0;
-      margin-left: -40px;
-      left: 50%;
-      z-index: 600; }
-      @media (min-width: 900px) {
-        header .brand img {
-          top: -15px;
-          margin: 0;
-          height: 110px;
-          left: 15px; } }
+  header .brand img {
+    position: absolute;
+    height: 80px;
+    top: 0;
+    margin: 0;
+    margin-left: -40px;
+    left: 50%;
+    z-index: 600; }
+    @media (min-width: 900px) {
+      header .brand img {
+        top: -15px;
+        margin: 0;
+        height: 110px;
+        left: 15px; } }
 
 @media (max-width: 899px) {
   html.show-menu .nav-wrapper {
@@ -418,7 +416,7 @@ header {
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1); }
 
 .product-list {
-  padding: 0 0 100px; }
+  padding: 0 0 50px; }
 
 .product-card .product-img {
   margin: 0;
@@ -457,15 +455,6 @@ header {
   line-height: 35px;
   color: #794400;
   padding-bottom: 50px; }
-
-.full-width-content {
-  font-size: 18px;
-  overflow: hidden; }
-  .full-width-content img {
-    height: auto; }
-    @media (min-width: 900px) {
-      .full-width-content img {
-        width: 100%; } }
 
 .page-hero {
   margin-top: -15px;

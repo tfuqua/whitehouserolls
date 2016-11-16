@@ -10,6 +10,17 @@ function whitehouserolls_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'whitehouserolls_enqueue_styles' );
 
 
-add_filter( 'theme_page_templates', 'my_remove_page_template' );
+function remove_page_templates( $pages_templates ) {
+
+    unset($pages_templates['templates/blog.php']);
+    unset($pages_templates['templates/careers.php']);
+    unset($pages_templates['templates/community.php']);
+    unset($pages_templates['templates/food-team.php']);
+    unset($pages_templates['templates/order-online.php']);
+    unset($pages_templates['templates/our-story.php']);
+
+    return $pages_templates;
+}
+add_filter( 'theme_page_templates', 'remove_page_templates' );
 
 ?>

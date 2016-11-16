@@ -6,14 +6,11 @@
 	      <?php the_post_thumbnail(); ?>
 			<?php endif; ?>
 		</div>
-
 		<div class="product-section">
 			<h3><?php the_title(); ?></h3>
-		</div>
-		<?php if(get_field('buy_link')){ ?>
-			<div class="product-buttons">
-				<a class="button" href="<?php echo get_field('buy_link');?>">Order Online</a>
+			<div class="blurb">
+				<?php the_content() ?>
 			</div>
-		<?php } ?>
+		</div>
 	</div>
 </div>

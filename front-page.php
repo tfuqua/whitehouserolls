@@ -136,7 +136,7 @@ get_header(); ?>
                       <?php echo the_excerpt() ?>
                     </div>
                     <div class="featured-button">
-                      <a href="#">
+                      <a class="button" href="#">
                         <?php echo the_sub_field('button_text') ?>
                       </a>
                     </div>
