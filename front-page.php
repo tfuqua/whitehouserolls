@@ -131,7 +131,7 @@ get_header(); ?>
                       <?php the_title();?>
                     </div>
                     <div class="featured-description">
-                      <?php echo the_excerpt() ?>
+                      <?php echo excerpt('30'); ?>
                     </div>
                     <div class="featured-button">
                       <a class="button" href="#">
