@@ -64,7 +64,7 @@ get_header(); ?>
                         <?php echo the_sub_field('body');?>
                       </div>
                       <div class="featured-button">
-                        <a>
+                        <a href="  <?php echo the_sub_field('button_link');?>">
                           <?php echo the_sub_field('button_text');?>
                         </a>
                       </div>
@@ -96,7 +96,7 @@ get_header(); ?>
               <div>
                 <?php echo get_field('hero_2_text')?>
               </div>
-              <?php if(get_field('button_text')) { ?>
+              <?php if(get_field('button_2_text')) { ?>
               <div class="hero-button">
                 <a href="<?php echo get_field('button_2_link')?>"><?php echo get_field('button_2_text')?></a>
               </div>
@@ -120,14 +120,12 @@ get_header(); ?>
                   $post = $post_object;
                   setup_postdata( $post ); ?>
 
-                  <div class="featured-thumbnail">
-                    <?php if ( has_post_thumbnail() ) {
-                        the_post_thumbnail('medium');
-                    } else if (get_sub_field('post_image') != '') { ?>
-                      <?php echo wp_get_attachment_image(get_sub_field('post_image'), 'medium', false, array( 'class' => 'lazy-load') );?>
-                    <?php
-                    }?>
-                  </div>
+                  <?php
+              			$background = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full', false);
+              		?>
+              		<div class="featured-thumbnail" style="background-image: url('<?php echo $background[0] ?>');">
+              		</div>
+
                   <div class="featured-post-content">
                     <div class="featured-title">
                       <?php the_title();?>

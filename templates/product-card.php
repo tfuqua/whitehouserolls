@@ -1,16 +1,25 @@
+<?php
+/* Template Name: Product Template */
+?>
 
 <div id="post-<?php the_ID(); ?>" class="product-card-wrapper">
 	<div class="product-card">
-		<div class="product-img">
-			<?php if ( has_post_thumbnail() ) : ?>
-	      <?php the_post_thumbnail(); ?>
-			<?php endif; ?>
+
+		<?php
+			$background = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full', false);
+		?>
+		<div class="product-img" style="background-image: url('<?php echo $background[0] ?>');">
 		</div>
+
 		<div class="product-section">
 			<h3><?php the_title(); ?></h3>
-			<div class="blurb">
-				<?php the_content() ?>
-			</div>
+
+			<?php if(get_field('buy_link')){ ?>
+				<div class="product-buttons">
+					<a class="button" href="<?php echo get_field('buy_link');?>">Order Online</a>
+				</div>
+			<?php } ?>
+
 		</div>
 	</div>
 </div>

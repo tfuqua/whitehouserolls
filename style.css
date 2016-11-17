@@ -117,6 +117,14 @@ blockquote {
   color: #794400;
   margin: 30px 0; }
 
+.button {
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  background-image: linear-gradient(to bottom, #ff7717, #ec5d15);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  line-height: 25px; }
+
 header {
   position: relative;
   border-top: none;
@@ -414,18 +422,34 @@ header {
     line-height: 25px;
     background-image: linear-gradient(to bottom, #ff7717, #ec5d15);
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1); }
+  .featured-posts .featured-post .featured-thumbnail {
+    margin: 0px;
+    overflow: hidden;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    height: 200px;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-position: top center; }
 
 .product-list {
   padding: 0 0 50px; }
 
 .product-card .product-img {
-  margin: 0;
-  text-align: center; }
-  .product-card .product-img img {
-    width: auto;
-    height: auto;
-    max-width: 75%;
-    max-height: 350px; }
+  margin: 0px;
+  overflow: hidden;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  height: 250px;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-position: top center; }
 
 .product-card .product-section h3 {
   font-family: AmericanTypewriter;
@@ -437,15 +461,10 @@ header {
   color: #794400; }
 
 .product-card .product-buttons {
-  padding: 0 30px 30px;
-  text-align: center; }
-  .product-card .product-buttons a {
-    border-radius: 5px;
-    width: auto;
-    display: inline-block;
-    padding: 10px 15px;
-    background-image: linear-gradient(to bottom, #ff7717, #ec5d15);
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1); }
+  padding: 0;
+  text-align: left; }
+  .product-card .product-buttons .button {
+    display: inline-block; }
 
 .whr-page {
   font-size: 20px;

@@ -29,4 +29,18 @@
     background-image: linear-gradient(to bottom, #ff7717, #ec5d15);
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   }
+  .featured-thumbnail{
+    margin:0px;
+    overflow: hidden;
+    border-top-right-radius:7px;
+    border-top-left-radius: 7px;
+    height: 200px;
+    background-repeat: no-repeat;
+
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-position: top center;
+  }
 }

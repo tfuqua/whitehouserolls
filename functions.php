@@ -18,6 +18,7 @@ function remove_page_templates( $pages_templates ) {
     unset($pages_templates['templates/food-team.php']);
     unset($pages_templates['templates/order-online.php']);
     unset($pages_templates['templates/our-story.php']);
+    unset($pages_templates['templates/product.php']);
 
     return $pages_templates;
 }

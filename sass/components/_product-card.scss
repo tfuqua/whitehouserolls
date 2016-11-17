@@ -1,19 +1,22 @@
 .product-list{
-  padding:0 0 50px;  
+  padding:0 0 50px;
 }
 
 .product-card{
 
   .product-img{
-    margin:0;
-    text-align: center;
+    margin:0px;
+    overflow: hidden;
+    border-top-right-radius:7px;
+    border-top-left-radius: 7px;
+    height: 250px;
+    background-repeat: no-repeat;
 
-    img {
-      width:auto;
-      height: auto;
-      max-width: 75%;
-      max-height: 350px;
-    }
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-position: top center;
   }
 
   .product-section{
@@ -30,16 +33,9 @@
   }
 
   .product-buttons{
-    padding:0 30px 30px;
-    text-align: center;
-
-      a {
-        border-radius: 5px;
-        width: auto;
-        display: inline-block;
-        padding:10px 15px;
-        background-image: linear-gradient(to bottom, #ff7717, #ec5d15);
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
-      }
+    padding:0;
+    text-align: left;
+    
+    .button{display: inline-block;}
   }
 }
