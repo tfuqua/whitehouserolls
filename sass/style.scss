@@ -6,9 +6,6 @@
  Version:      1.0.0
 */
 
-//contains 3rd-party styles, mixins, etc.
-@import "vendors/module";
-
 //contains global mixins, functions, helper selectors, etc.
 @import "utils/module";
 
@@ -23,6 +20,3 @@
 
 //contains page-specific styling, if necessary
 @import "pages/module";
-
-//contains styling for different themes
-@import "themes/module";

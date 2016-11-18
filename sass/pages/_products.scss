@@ -7,14 +7,14 @@
 
   .container-fluid{
     @media (min-width: $screen-md-min) {
-      display: flex;
-      align-items: center;
+      @include flexbox();
+      @include align-items(center);
     }
   }
 
   .hero-img, .hero-text {
     @media (min-width: $screen-md-min) {
-      flex:1;
+      @include flex();
     }
   }
 

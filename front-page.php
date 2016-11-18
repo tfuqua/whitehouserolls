@@ -23,7 +23,7 @@ get_header(); ?>
               </div>
               <?php if(get_field('button_text')) { ?>
               <div class="hero-button">
-                <a href="<?php echo get_field('button_link')?>"><?php echo get_field('button_text')?></a>
+                <a class="button" href="<?php echo get_field('button_link')?>"><?php echo get_field('button_text')?></a>
               </div>
               <?php } ?>
             </div>
@@ -63,8 +63,8 @@ get_header(); ?>
                       <div class="featured-body">
                         <?php echo the_sub_field('body');?>
                       </div>
-                      <div class="featured-button">
-                        <a href="  <?php echo the_sub_field('button_link');?>">
+                      <div>
+                        <a class="button" href="  <?php echo the_sub_field('button_link');?>">
                           <?php echo the_sub_field('button_text');?>
                         </a>
                       </div>
@@ -133,7 +133,8 @@ get_header(); ?>
                     <div class="featured-description">
                       <?php echo excerpt('30'); ?>
                     </div>
-                    <div class="featured-button">
+                    <div>
+                      <br />
                       <a class="button" href="#">
                         <?php echo the_sub_field('button_text') ?>
                       </a>

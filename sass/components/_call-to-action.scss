@@ -6,16 +6,14 @@
 
   @media (min-width: $screen-md-min) {
 
-    display: flex;
+    @include flexbox();
 
     > div {
         width:50%;
         padding:10px 15px;
       }
     }
-
   }
-
 
   .call-to-action-img{
     text-align: center;
