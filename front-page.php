@@ -98,7 +98,7 @@ get_header(); ?>
               </div>
               <?php if(get_field('button_2_text')) { ?>
               <div class="hero-button">
-                <a href="<?php echo get_field('button_2_link')?>"><?php echo get_field('button_2_text')?></a>
+                <a class="button" href="<?php echo get_field('button_2_link')?>"><?php echo get_field('button_2_text')?></a>
               </div>
               <?php } ?>
             </div>
