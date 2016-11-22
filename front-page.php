@@ -135,7 +135,7 @@ get_header(); ?>
                     </div>
                     <div>
                       <br />
-                      <a class="button" href="#">
+                      <a class="button" href="<?php echo get_permalink(); ?>">
                         <?php echo the_sub_field('button_text') ?>
                       </a>
                     </div>
