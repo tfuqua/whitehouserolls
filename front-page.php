@@ -57,8 +57,8 @@ get_header(); ?>
           <div class="container-fluid">
             <?php while ( have_rows('featured_content') ) : the_row(); ?>
                 <div class="featured-item">
-                  <div class="featured-section">
-                    <div class="flex">
+                  <div class="featured-section whr">
+                    <div class="flex <?php if(get_sub_field('image')){ echo 'has-img'; }?>">
                       <h3><?php echo the_sub_field('heading');?></h3>
                       <div class="featured-body">
                         <?php echo the_sub_field('body');?>
@@ -70,7 +70,7 @@ get_header(); ?>
                       </div>
                     </div>
                     <?php if(get_sub_field('image')) { ?>
-                    <div class="img-wrapper flex">
+                    <div class="img-wrapper flex has-img">
                       <?php echo wp_get_attachment_image(get_sub_field('image'), 'medium', false, array( 'class' => 'lazy-load'));?>
                     </div>
                    <?php } ?>
