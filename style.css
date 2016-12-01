@@ -205,9 +205,9 @@ header {
     @media (min-width: 900px) {
       .hero.hero-2 .hero-text {
         width: 40%;
-        left: 0;
-        top: 0px;
-        position: absolute; } }
+        float: left;
+        margin: 0;
+        clear: none; } }
     @media (max-width: 899px) {
       .hero.hero-2 .hero-text .hero-button a {
         padding-left: 45px;
@@ -228,7 +228,7 @@ header {
       background-size: auto 90%; } }
   @media (min-width: 1080px) {
     .hero.hero-1 {
-      background-position: center top 20px; } }
+      background-position: center top 50px; } }
   @media (max-width: 899px) {
     .hero.hero-1 {
       background-position: center top 120px;
@@ -249,8 +249,7 @@ header {
     padding-top: 0; }
     @media (min-width: 900px) {
       .hero.hero-1 .hero-text {
-        width: 60%;
-        padding-top: 20px; } }
+        width: 60%; } }
     @media (min-width: 1080px) {
       .hero.hero-1 .hero-text {
         width: 40%; } }
@@ -290,6 +289,9 @@ header {
         .hero.hero-1 .hero-text .hero-button a {
           width: 320px;
           max-width: 100%; } }
+
+.hero .hero-text-wrapper {
+  position: static; }
 
 .call-to-action {
   padding: 40px 0; }
@@ -500,7 +502,8 @@ header {
   margin-bottom: 50px;
   background-color: #ebbb30;
   background-position: -9999px;
-  background-size: 0%; }
+  background-size: 0%;
+  padding: 15px 0 25px; }
   @media (min-width: 900px) {
     .page-hero {
       background-repeat: no-repeat;

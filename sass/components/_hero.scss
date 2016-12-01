@@ -60,9 +60,9 @@
 
     @media (min-width: $screen-md-min) {
         width:40%;
-        left:0;
-        top:0px;
-        position: absolute;
+        float:left;
+        margin:0;
+        clear: none;
     }
 
     .hero-button {
@@ -94,7 +94,7 @@
   }
 
   @media (min-width: $screen-lg-min) {
-    background-position: center top 20px;
+    background-position: center top 50px;
   }
 
 
@@ -110,7 +110,6 @@
   }
 
   .hero-text{
-
     font-family: AmericanTypewriter;
     font-size: 45px;
     color: #794400;
@@ -123,7 +122,6 @@
 
     @media (min-width: $screen-md-min) {
       width:60%;
-      padding-top:20px;
     }
 
     @media (min-width: $screen-lg-min) {
@@ -181,4 +179,8 @@
       }
     }
   }
+}
+
+.hero .hero-text-wrapper{
+  position: static; // Allow us to move the rolls around
 }
