@@ -231,7 +231,7 @@ header {
       background-position: center top 50px; } }
   @media (max-width: 899px) {
     .hero.hero-1 {
-      background-position: center top 120px;
+      background-position: center top 150px;
       min-height: 500px;
       padding-bottom: 75px;
       padding-top: 10px; }
@@ -254,12 +254,12 @@ header {
       .hero.hero-1 .hero-text {
         width: 40%; } }
     .hero.hero-1 .hero-text .extra-img {
-      margin: 100px auto 0;
+      margin: 120px auto 0;
       width: 100%;
       text-align: center; }
       @media (min-width: 481px) {
         .hero.hero-1 .hero-text .extra-img {
-          margin-top: 80px; } }
+          margin-top: 150px; } }
       .hero.hero-1 .hero-text .extra-img img {
         width: 100%;
         max-width: 200px;

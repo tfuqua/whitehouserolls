@@ -99,7 +99,7 @@
 
 
   @media (max-width: $screen-sm-max) {
-    background-position: center top 120px;
+    background-position: center top 150px;
     min-height: 500px;
     padding-bottom:75px;
     padding-top:10px;
@@ -130,12 +130,12 @@
 
     .extra-img{
 
-        margin:100px auto 0;
+        margin:120px auto 0;
         width:100%;
         text-align: center;
 
         @media (min-width: $screen-sm-min) {
-          margin-top:80px;
+          margin-top:150px;
         }
 
         img {

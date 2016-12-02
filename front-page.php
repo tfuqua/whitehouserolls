@@ -91,10 +91,10 @@ get_header(); ?>
             </div>
             <div class="hero-text">
               <h3>
-                <?php echo get_field('hero_header')?>
+                <?php echo get_field('hero_2_header')?>
               </h3>
               <div>
-                <?php echo get_field('hero_2_text')?>
+                <?php echo get_field('hero_2_body')?>
               </div>
               <?php if(get_field('button_2_text')) { ?>
               <div class="hero-button">
