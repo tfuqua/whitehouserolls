@@ -54,25 +54,26 @@ get_header(); ?>
     <?php
       if( have_rows('featured_content') ) { ?>
         <div class="featured-content-wrapper">
-          <div class="container-fluid">
+          <div class="featured-items">
             <?php while ( have_rows('featured_content') ) : the_row(); ?>
                 <div class="featured-item">
                   <div class="featured-section whr">
                     <div class="flex <?php if(get_sub_field('image')){ echo 'has-img'; }?>">
-                      <h3><?php echo the_sub_field('heading');?></h3>
-                      <div class="featured-body">
-                        <?php echo the_sub_field('body');?>
-                      </div>
+                        <h3><?php echo the_sub_field('heading');?></h3>
+                        <div class="featured-body">
+                          <?php echo the_sub_field('body');?>
+                        </div>
                       <div>
                         <a class="button" href="  <?php echo the_sub_field('button_link');?>">
                           <?php echo the_sub_field('button_text');?>
                         </a>
                       </div>
                     </div>
-                    <?php if(get_sub_field('image')) { ?>
-                    <div class="img-wrapper flex has-img">
-                      <?php echo wp_get_attachment_image(get_sub_field('image'), 'medium', false, array( 'class' => 'lazy-load'));?>
-                    </div>
+                    <?php if(get_sub_field('image')) {
+                      $background = wp_get_attachment_image_src(get_sub_field('image'), 'full', false);
+                      ?>
+                      <div class="img-wrapper flex has-img" style="background-image: url('<?php echo $background[0] ?>');">
+                      </div>
                    <?php } ?>
                   </div>
                 </div>
