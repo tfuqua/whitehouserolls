@@ -107,7 +107,7 @@
   animation-timing-function: ease-in-out; }
 
 blockquote {
-  font-family: AmericanTypewriter serif;
+  font-family: americantypewriter, "courier", serif;
   font-size: 38px;
   font-weight: bold;
   font-style: normal;
@@ -194,7 +194,7 @@ header {
     line-height: 1.59;
     color: #ffffff; }
     .hero.hero-2 .hero-text h3 {
-      font-family: AmericanTypewriter serif;
+      font-family: americantypewriter, "courier", serif;
       font-size: 38px;
       margin: 5px 0 25px;
       font-weight: bold;
@@ -238,7 +238,7 @@ header {
       .hero.hero-1 .hero-text-wrapper {
         padding-top: 0; } }
   .hero.hero-1 .hero-text {
-    font-family: AmericanTypewriter serif;
+    font-family: americantypewriter, "courier", serif;
     font-size: 45px;
     color: #794400;
     font-weight: bold;
@@ -284,7 +284,7 @@ header {
         left: 0;
         text-align: center; } }
     .hero.hero-1 .hero-text .hero-button a {
-      font-family: "Gotham SSm A", "Gotham SSm B"; }
+      font-family: "Gotham SSm A","Gotham SSm B","Helvetica Neue",Helvetica,Arial,sans-serif; }
       @media (max-width: 899px) {
         .hero.hero-1 .hero-text .hero-button a {
           width: 320px;
@@ -318,7 +318,7 @@ header {
     line-height: 1.52;
     color: #794400; }
     .call-to-action .call-to-action-content h3 {
-      font-family: AmericanTypewriter serif;
+      font-family: americantypewriter, "courier", serif;
       font-size: 38px;
       font-weight: bold;
       font-style: normal;
@@ -433,7 +433,7 @@ header {
       color: #b06010; }
     .featured-content-wrapper .featured-items h3 {
       font-size: 30px;
-      font-family: AmericanTypewriter serif;
+      font-family: americantypewriter, "courier", serif;
       font-weight: bold;
       font-style: normal;
       font-stretch: normal;
@@ -447,7 +447,7 @@ header {
     .featured-posts .featured-post {
       margin: 40px 40px 40px 0; } }
   .featured-posts .featured-post .featured-title {
-    font-family: AmericanTypewriter serif;
+    font-family: americantypewriter, "courier", serif;
     font-size: 30px;
     font-weight: bold;
     font-style: normal;
@@ -488,7 +488,7 @@ header {
   background-position: top center; }
 
 .product-card .product-section h3 {
-  font-family: AmericanTypewriter serif;
+  font-family: americantypewriter, "courier", serif;
   font-size: 30px;
   font-weight: bold;
   font-style: normal;
@@ -529,7 +529,7 @@ header {
   padding: 15px 15px 0;
   margin: 0 auto; }
   .hero-heading h3 {
-    font-family: AmericanTypewriter serif;
+    font-family: americantypewriter, "courier", serif;
     font-size: 45px;
     font-weight: bold;
     font-style: normal;
@@ -598,7 +598,7 @@ header {
       -ms-flex: 1;
       flex: 1; } }
   .whr-products-hero .hero-text h2 {
-    font-family: AmericanTypewriter serif;
+    font-family: americantypewriter, "courier", serif;
     font-size: 45px;
     font-weight: bold;
     font-style: normal;

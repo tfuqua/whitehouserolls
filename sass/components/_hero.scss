@@ -48,7 +48,7 @@
     color: #ffffff;
 
     h3 {
-      font-family: AmericanTypewriter serif;
+      font-family: americantypewriter, "courier", serif;
       font-size: 38px;
       margin:5px 0 25px;
       font-weight: bold;
@@ -110,7 +110,7 @@
   }
 
   .hero-text{
-    font-family: AmericanTypewriter serif;
+    font-family: americantypewriter, "courier", serif;
     font-size: 45px;
     color: #794400;
     font-weight: bold;
@@ -170,8 +170,7 @@
       }
 
       a {
-        font-family: "Gotham SSm A", "Gotham SSm B";
-
+        font-family: "Gotham SSm A","Gotham SSm B","Helvetica Neue",Helvetica,Arial,sans-serif;
         @media (max-width: $screen-sm-max) {
           width:320px;
           max-width: 100%;
